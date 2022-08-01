@@ -1,0 +1,79 @@
+canvas {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin:0;
+  padding-top:45px;
+}
+
+
+.navbar {
+  top: 8%;
+  background-color: #3b3333;
+  position: fixed;
+  height: 56px;
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  box-shadow: 5px 5px 5px  rgba(0,0,0,.4);
+  border: 2px #262121;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Exo', sans-serif;
+    text-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+    color: white;
+	-webkit-transition: color 1s;
+    transition: color .2s linear, text-shadow .2s linear, transform .5s; 
+}
+
+.navbar a:hover {
+text-shadow: 0px 0px 10px rgb(255, 255, 255); 
+color: rgb(255, 255, 255);
+cursor: default
+}
+
+.navbar a.active {
+  color: rgb(255, 80, 214);
+  font-weight: bold;
+}
+
+.main {
+  padding: 16px;
+  top: 20%;
+  height: 1500px;
+  max-width: 800px;
+  margin: auto;
+  background: rgb(65, 65, 65);
+  padding: 10px;
+  display: block;
+}
+
+.left {
+  transition: transform .2s;
+}
+
+.left:hover {
+  transform: scale(1.1);
+}
+
+.playerinfo {
+  position: Absolute;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255); 
+  border-radius: 25px;
+  right 0px; 
+}
