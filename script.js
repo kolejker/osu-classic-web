@@ -48,13 +48,10 @@ const config = {
   background: '#fff',
 
   palette: [
-  '#a3a3a3',
-  '#c2c2c2',
-  '#8c8c8c',
-  '#616161',
-  '#6e6e6e',
-  '#f2f2f2',
-  '#d4d4d4'],
+  '#999797',
+  '#DADADA',
+  '#C8C8C8',
+  '#FFFFFF'],
 
 
   size: {
