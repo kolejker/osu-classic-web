@@ -1,12 +1,10 @@
-// Helper Functions
+
 const range = n => [...Array(n)].map((v, k) => k);
 const random = ({ min, max }) => Math.floor(Math.random() * (1 + max - min)) + min;
 const randomArray = arr => arr[random({ min: 0, max: arr.length - 1 })];
 
-// Constants
 const HALF_SQRT3 = Math.sqrt(3) / 2;
 
-// Types
 class Triangle {
   constructor({ position, color, size, speed }) {
     this.color = color;
@@ -40,14 +38,12 @@ class Triangle {
   }}
 
 
-// Canvas
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
-// Configurations
 const config = {
   background: '#fff',
 
@@ -74,10 +70,8 @@ const config = {
   triangles: 250 };
 
 
-// Triangles
 const triangles = [];
 
-// Setup
 range(config.triangles).forEach(i => {
   const size = random(config.size);
   const speed = random(config.speed);
@@ -92,7 +86,6 @@ range(config.triangles).forEach(i => {
 
 });
 
-// Draw
 const render = () => {
   ctx.fillStyle = config.background;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
